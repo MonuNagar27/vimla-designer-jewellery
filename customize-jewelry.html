@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Customize your jewellery with Vimla Designer Jewellery." />
+  <title>Customise Jewellery | Vimla Designer Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="customize-jewelry.css" />
+</head>
+<body>
+  <div class="palace-border" aria-hidden="true"></div>
+  <header class="custom-header">
+    <a href="index.html"><img src="logo.svg" alt="Vimla Designer Jewellery" /></a>
+    <nav aria-label="Custom jewellery navigation"><a href="index.html">Home</a><a href="index.html#featured">Shop Jewellery</a><a href="dashboard.html">My Account</a></nav>
+  </header>
+
+  <main>
+    <section class="custom-hero">
+      <div class="hero-copy"><p class="eyebrow">New collection · Made for you</p><h1>Customise<br /><em>your jewellery.</em></h1><p>Share a photo of a jewellery piece you love and tell us how you would like to redesign, renew or personalise it. Our artisans will help turn your idea into something uniquely yours.</p><div class="hero-points"><span>✦ Personal design consultation</span><span>✦ Rajasthani-inspired craftsmanship</span><span>✦ WhatsApp support from our Kota studio</span></div></div>
+      <div class="hero-art"><div class="art-frame"><span>V</span><small>Custom<br />Atelier</small></div></div>
+    </section>
+
+    <section class="custom-shell">
+      <div class="section-heading"><p class="eyebrow">Your vision, our craft</p><h2>Begin your custom jewellery request</h2><p>Upload one clear photo and choose the kind of transformation you have in mind.</p></div>
+      <form id="customForm" class="custom-form">
+        <div class="form-columns">
+          <div class="form-fields">
+            <label>Full name<input name="name" type="text" placeholder="Your full name" required /></label>
+            <label>WhatsApp number<input name="phone" type="tel" placeholder="Your phone number" required /></label>
+            <label>Email address<input name="email" type="email" placeholder="you@example.com" /></label>
+            <label>What would you like us to customise?<select name="service" required><option value="">Choose an option</option><option>Redesign this jewellery into a new piece</option><option>Renew and polish my existing jewellery</option><option>Add stones, pearls or meenakari</option><option>Create a matching bridal set</option><option>Convert it into a necklace, ring or pendant</option><option>I need design advice</option></select></label>
+            <label>Preferred jewellery type<select name="jewelryType" required><option value="">Choose a jewellery type</option><option>Necklace or choker</option><option>Earrings or jhumkas</option><option>Ring</option><option>Bangles or bracelet</option><option>Maang tikka or bridal jewellery</option><option>Other</option></select></label>
+            <label>Tell us your choice<textarea name="message" rows="5" placeholder="Describe colours, stones, style, size, budget or any changes you want..."></textarea></label>
+          </div>
+          <div class="upload-column">
+            <label class="upload-box" for="customPhoto"><span class="upload-icon">♢</span><strong>Upload your chosen jewellery photo</strong><small>JPG, PNG or WEBP · Maximum 5 MB</small><input id="customPhoto" name="photo" type="file" accept="image/jpeg,image/png,image/webp" required /></label>
+            <div id="photoPreview" class="photo-preview" hidden><img id="previewImage" alt="Uploaded jewellery preview" /><div><strong>Photo selected</strong><button id="removePhoto" type="button">Remove photo</button></div></div>
+            <div class="consultation-note"><strong>How our custom service works</strong><ol><li>Send your photo and preferences.</li><li>Our team reviews your idea.</li><li>We contact you on WhatsApp with suggestions and an estimate.</li></ol></div>
+          </div>
+        </div>
+        <button class="gold-button" type="submit">Send customisation request <span>↗</span></button><p id="customMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="custom-footer"><span>© 2026 Vimla Designer Jewellery</span><span>Handcrafted Indian jewellery · Kota, Rajasthan</span></footer>
+  <script src="customize-jewelry.js"></script>
+</body>
+</html>
