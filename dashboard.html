@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your private jewellery room at Vimla Designer Jewellery." />
+  <title>My Account | Vimla Designer Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="palace-border" aria-hidden="true"></div>
+  <header class="dashboard-header">
+    <a href="index.html" class="dashboard-logo"><img src="logo.svg" alt="Vimla Designer Jewellery" /></a>
+    <div class="dashboard-actions"><a href="index.html#featured" class="outline-link">Continue shopping ↗</a><button id="logoutButton" class="logout-button">Sign out</button></div>
+  </header>
+  <main class="dashboard-shell">
+    <section class="welcome-card">
+      <div><p class="eyebrow">Your private jewellery room</p><h1>Welcome back, <span id="customerName">Guest</span>.</h1><p>Keep your favourite pieces close, follow your orders and enjoy a more personal Vimla experience.</p></div>
+      <div class="welcome-seal"><span>V</span><small>Vimla<br />Kota</small></div>
+    </section>
+    <div class="dashboard-grid">
+      <aside class="dashboard-nav" aria-label="Account navigation"><button class="dash-tab active" data-panel="overview">Overview</button><button class="dash-tab" data-panel="orders">My orders</button><button class="dash-tab" data-panel="favourites">Favourites <span id="favouriteCount">0</span></button><button class="dash-tab" data-panel="details">Account details</button></aside>
+      <section class="dashboard-content">
+        <div class="dash-panel active" id="overview"><div class="panel-heading"><div><p class="eyebrow">A curated experience</p><h2>Your Vimla world</h2></div><span class="status-pill">Member</span></div><div class="stat-grid"><article><span>Orders</span><strong id="orderCount">0</strong><small>Your jewellery journey</small></article><article><span>Favourites</span><strong id="overviewFavouriteCount">0</strong><small>Pieces you love</small></article><article><span>Member since</span><strong id="memberSince">2026</strong><small>Welcome to the family</small></article></div><div class="recommendation"><div><p class="eyebrow">For your next celebration</p><h3>Explore the Rajputi Bridal Edit</h3><p>Discover heirloom-inspired Rani Haars, Kundan Jhumkas and Hathphool.</p><a href="index.html#featured" class="gold-link">Shop bridal jewellery ↗</a></div><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=80" alt="Bridal jewellery collection" /></div></div>
+        <div class="dash-panel" id="orders"><div class="panel-heading"><div><p class="eyebrow">Your history</p><h2>My orders</h2></div></div><div id="ordersList" class="empty-panel"><span>♢</span><h3>Your first Vimla moment awaits.</h3><p>Orders placed through the checkout will appear here.</p><a href="index.html#featured" class="gold-link">Browse the collection ↗</a></div></div>
+        <div class="dash-panel" id="favourites"><div class="panel-heading"><div><p class="eyebrow">Saved for later</p><h2>Favourites</h2></div></div><div id="favouritesList" class="saved-grid"></div></div>
+        <div class="dash-panel" id="details"><div class="panel-heading"><div><p class="eyebrow">Your information</p><h2>Account details</h2></div></div><form id="detailsForm" class="details-form"><label>Full name<input id="detailsName" type="text" required /></label><label>Email address<input id="detailsEmail" type="email" required /></label><label>Phone number<input id="detailsPhone" type="tel" placeholder="Add your phone number" /></label><label>Delivery address<textarea id="detailsAddress" rows="3" placeholder="Add your preferred delivery address"></textarea></label><button class="gold-button" type="submit">Save details</button><p id="detailsMessage" class="form-message"></p></form></div>
+      </section>
+    </div>
+  </main>
+  <footer class="dashboard-footer"><span>© 2026 Vimla Designer Jewellery</span><span>Handcrafted Indian jewellery · Kota, Rajasthan</span></footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>
