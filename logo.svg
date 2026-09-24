@@ -1,1 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-labelledby="title desc"><title id="title">Vimla Designer Jewellery</title><desc id="desc">Vimla Designer Jewellery wordmark in gold on a deep wine background.</desc><rect width="600" height="300" fill="#720d3b"/><g fill="#e5c171" stroke="#e5c171"><path d="M265 46h70l-12 18h-46z"/><path d="M276 44l24-14 24 14-24 13z" fill="none" stroke-width="3"/><path d="M193 78h214M218 70l-25 12 25 12M382 70l25 12-25 12M250 72l-18 12 18 12M350 72l18 12-18 12" fill="none" stroke-width="3"/></g><text x="300" y="158" text-anchor="middle" fill="#f5d681" font-family="Georgia,serif" font-size="72" letter-spacing="2">VIMLA</text><text x="300" y="190" text-anchor="middle" fill="#f5d681" font-family="Arial,sans-serif" font-size="22" letter-spacing="11">DESIGNER</text><text x="300" y="218" text-anchor="middle" fill="#f5d681" font-family="Arial,sans-serif" font-size="22" letter-spacing="9">JEWELLERY</text><g fill="#e5c171"><path d="M193 242h214v3H193z"/><path d="M220 235l-25 9 25 9M380 235l25 9-25 9"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-labelledby="title desc">
+  <title id="title">Vimla Designer Jewellery</title>
+  <desc id="desc">Luxury Vimla Designer Jewellery logo with a gold diamond and ornamental flourishes on a burgundy background.</desc>
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0a6"/><stop offset=".28" stop-color="#d5a84f"/><stop offset=".55" stop-color="#fff3b2"/><stop offset="1" stop-color="#a66a20"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="2.2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="720" height="360" rx="12" fill="#680b37"/>
+  <path d="M44 40h632M44 320h632" stroke="#c89539" stroke-opacity=".28"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="3" stroke-linecap="round" filter="url(#glow)">
+    <path d="M205 92c-30-22-55-20-76-2 26 3 44 13 58 31-28-12-52-9-70 8 31 1 55 12 71 30"/>
+    <path d="M515 92c30-22 55-20 76-2-26 3-44 13-58 31 28-12 52-9 70 8-31 1-55 12-71 30"/>
+    <path d="M220 108h280M237 123h246"/>
+    <path d="M205 268c-30 22-55 20-76 2 26-3 44-13 58-31-28 12-52 9-70-8 31-1 55-12 71-30"/>
+    <path d="M515 268c30 22 55 20 76 2-26-3-44-13-58-31 28 12 52 9 70-8-31-1-55-12-71-30"/>
+    <path d="M220 252h280M237 237h246"/>
+  </g>
+  <g transform="translate(360 63)" filter="url(#glow)">
+    <path d="M-32 0L0-20 32 0 0 27z" fill="url(#gold)" stroke="#fff0a6" stroke-width="2"/>
+    <path d="M-32 0h64L0 27z" fill="#b87928" opacity=".75"/>
+    <path d="M-17-6L0-13 17-6 0 5z" fill="#fff4b7" opacity=".9"/>
+    <path d="M0 27v14" stroke="url(#gold)" stroke-width="3"/>
+  </g>
+  <text x="360" y="184" text-anchor="middle" fill="url(#gold)" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="500" letter-spacing="4">VIMLA</text>
+  <text x="360" y="219" text-anchor="middle" fill="#f7dfa0" font-family="Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="13">DESIGNER</text>
+  <text x="360" y="249" text-anchor="middle" fill="#f7dfa0" font-family="Arial, sans-serif" font-size="20" font-weight="600" letter-spacing="10">JEWELLERY</text>
+  <g fill="url(#gold)"><circle cx="226" cy="219" r="3"/><circle cx="494" cy="219" r="3"/><circle cx="244" cy="249" r="3"/><circle cx="476" cy="249" r="3"/></g>
+</svg>
