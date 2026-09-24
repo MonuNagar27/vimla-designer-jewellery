@@ -1,0 +1,46 @@
+:root {
+  --wine: #680b37;
+  --wine-deep: #2d0717;
+  --wine-light: #9c3a63;
+  --gold: #bd8732;
+  --gold-light: #f6d991;
+  --cream: #fbf4e9;
+  --paper: #fffaf3;
+  --ink: #27131c;
+  --muted: #826b72;
+  --line: rgba(104, 11, 55, .16);
+  --shadow: 0 26px 80px rgba(55, 6, 30, .18);
+}
+
+* { box-sizing: border-box; }
+html { min-height: 100%; }
+body { min-height: 100vh; margin: 0; color: var(--ink); background: var(--cream); font-family: "Manrope", sans-serif; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .24; background-image: radial-gradient(rgba(104,11,55,.16) .65px, transparent .65px); background-size: 10px 10px; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+
+.palace-border { position: fixed; inset: 14px; z-index: 20; pointer-events: none; border: 1px solid rgba(189, 135, 50, .44); }
+.palace-border::before, .palace-border::after { content: "❧"; position: absolute; color: var(--gold); font-family: "Cormorant Garamond", serif; font-size: 2rem; line-height: 1; }
+.palace-border::before { top: -15px; left: 18px; transform: rotate(-28deg); }
+.palace-border::after { right: 18px; bottom: -15px; transform: rotate(152deg); }
+.palace-border span { position: absolute; width: 11px; height: 11px; border: 1px solid var(--gold); transform: rotate(45deg); background: var(--cream); }
+.palace-border span:nth-child(1) { top: -6px; left: 50%; }.palace-border span:nth-child(2) { right: -6px; top: 50%; }.palace-border span:nth-child(3) { bottom: -6px; left: 50%; }.palace-border span:nth-child(4) { left: -6px; top: 50%; }
+
+.account-header { position: relative; z-index: 2; width: min(1240px, calc(100% - 5rem)); margin: auto; min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.account-logo img { width: 210px; height: 88px; object-fit: contain; filter: drop-shadow(0 10px 22px rgba(104, 11, 55, .13)); }
+.back-link { color: var(--wine); font-size: .78rem; font-weight: 800; letter-spacing: .06em; }.back-link span { color: var(--gold); font-size: 1.2rem; margin-left: .3rem; }
+.account-shell { position: relative; z-index: 1; width: min(1240px, calc(100% - 5rem)); min-height: 600px; margin: 1rem auto 0; display: grid; grid-template-columns: 1.05fr .95fr; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid rgba(189, 135, 50, .42); }
+.bridal-campaign { position: relative; min-height: 610px; display: flex; align-items: end; overflow: hidden; color: white; background: linear-gradient(135deg, var(--wine-deep), var(--wine)); }
+.bridal-campaign::before { content: ""; position: absolute; inset: 1.5rem; border: 1px solid rgba(246, 217, 145, .52); border-radius: 50% 50% 18px 18px; pointer-events: none; z-index: 2; }
+.bridal-campaign::after { content: "✦  ❧  ✦  ❧  ✦"; position: absolute; top: 2rem; left: 0; right: 0; z-index: 3; color: var(--gold-light); text-align: center; letter-spacing: .7rem; font-size: 1rem; opacity: .85; }
+.campaign-overlay { position: absolute; inset: 0; background: linear-gradient(0deg, rgba(28, 4, 14, .9), rgba(28, 4, 14, .12)), url("https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85") center/cover; mix-blend-mode: screen; opacity: .5; }
+.campaign-content { position: relative; z-index: 4; max-width: 560px; padding: 4rem; }.campaign-kicker { color: var(--gold-light); font-size: .7rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }.campaign-content h1 { margin: 1rem 0 1.3rem; font: 600 clamp(3rem, 5vw, 5.5rem)/.82 "Cormorant Garamond", serif; letter-spacing: -.04em; }.campaign-content h1 em { color: var(--gold-light); font-weight: 400; }.campaign-content p:not(.campaign-kicker) { max-width: 430px; color: rgba(255, 246, 230, .78); line-height: 1.8; }.gold-link { display: inline-flex; align-items: center; gap: .4rem; margin-top: 1rem; color: var(--gold-light); font-size: .8rem; font-weight: 800; border-bottom: 1px solid var(--gold); padding-bottom: .35rem; }.campaign-seal { position: absolute; z-index: 4; right: 3.6rem; top: 5rem; width: 86px; height: 86px; display: grid; place-items: center; border: 1px solid var(--gold-light); border-radius: 50%; color: var(--gold-light); text-align: center; transform: rotate(-12deg); }.campaign-seal span { position: absolute; top: 12px; font: 2.6rem "Cormorant Garamond", serif; }.campaign-seal small { margin-top: 2.4rem; font-size: .46rem; letter-spacing: .14em; }
+
+.account-panel { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 4rem clamp(2rem, 5vw, 5.5rem); background: var(--paper); }.panel-ornament { margin-bottom: 1rem; color: var(--gold); font-size: 1.3rem; text-align: center; }.panel-heading { text-align: center; }.eyebrow { margin: 0 0 .9rem; color: var(--gold); font-size: .68rem; font-weight: 800; letter-spacing: .2em; text-transform: uppercase; }.panel-heading h2 { margin: 0; color: var(--wine-deep); font: 600 clamp(2.4rem, 3.2vw, 3.6rem)/.9 "Cormorant Garamond", serif; letter-spacing: -.03em; }.panel-heading p:last-child { margin: 1rem auto 0; color: var(--muted); font-size: .8rem; line-height: 1.7; max-width: 330px; }
+.account-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: .3rem; margin: 2rem 0 1.3rem; padding: .28rem; background: #f3e5d7; border-radius: 999px; }.tab { padding: .7rem; color: var(--muted); background: transparent; border: 0; border-radius: 999px; cursor: pointer; font-size: .78rem; font-weight: 800; }.tab.active { color: white; background: var(--wine); box-shadow: 0 7px 16px rgba(104, 11, 55, .18); }
+.account-form { display: flex; flex-direction: column; gap: 1rem; }.field { display: flex; flex-direction: column; gap: .4rem; }.field label { color: var(--wine); font-size: .72rem; font-weight: 800; letter-spacing: .06em; }.field input { width: 100%; padding: .85rem 1rem; color: var(--ink); background: white; border: 1px solid var(--line); border-radius: 12px; outline-color: var(--gold); }.password-wrap { position: relative; }.password-wrap input { padding-right: 4rem; }.password-toggle { position: absolute; top: 50%; right: .7rem; transform: translateY(-50%); border: 0; color: var(--wine); background: transparent; cursor: pointer; font-size: .7rem; font-weight: 800; }.form-options { display: flex; justify-content: space-between; gap: .5rem; align-items: center; color: var(--muted); font-size: .7rem; }.check-label { display: flex; align-items: center; gap: .35rem; }.text-button { padding: 0; border: 0; color: var(--wine); background: transparent; cursor: pointer; font-size: .7rem; font-weight: 800; }.submit-button { margin-top: .4rem; padding: 1rem; border: 0; border-radius: 999px; color: var(--wine-deep); background: linear-gradient(135deg, var(--gold-light), var(--gold)); cursor: pointer; font-weight: 800; box-shadow: 0 12px 25px rgba(189, 135, 50, .2); }.submit-button span { margin-left: .4rem; font-size: 1.2rem; }.form-message { min-height: 1.2rem; margin: 0; color: var(--wine); font-size: .72rem; line-height: 1.5; text-align: center; }.form-message.success { color: #236143; }.security-note { margin-top: 1.6rem; padding-top: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .67rem; text-align: center; }.security-note span { color: var(--gold); font-size: 1rem; margin-right: .3rem; }
+.packaging-strip { position: relative; z-index: 1; width: min(1240px, calc(100% - 5rem)); margin: 2rem auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }.service-card { padding: 1.3rem; text-align: center; background: rgba(255, 250, 243, .82); border: 1px solid var(--line); border-radius: 18px; }.service-icon { display: block; margin-bottom: .4rem; color: var(--gold); font-size: 1.35rem; }.service-card strong { display: block; color: var(--wine); font: 600 1.5rem "Cormorant Garamond", serif; }.service-card small { display: block; margin-top: .3rem; color: var(--muted); font-size: .68rem; }
+.account-footer { position: relative; z-index: 1; width: min(1240px, calc(100% - 5rem)); margin: 0 auto; padding: 1rem 0 2rem; display: flex; justify-content: space-between; gap: 1rem; color: var(--muted); font-size: .68rem; }
+
+@media (max-width: 900px) { .account-shell { grid-template-columns: 1fr; }.bridal-campaign { min-height: 500px; }.campaign-content { padding: 3rem; }.account-panel { padding: 3.5rem 2rem; } }
+@media (max-width: 620px) { .palace-border { inset: 7px; }.account-header,.account-shell,.packaging-strip,.account-footer { width: min(100% - 2rem, 520px); }.account-header { min-height: 90px; }.account-logo img { width: 155px; height: 74px; }.back-link { font-size: .65rem; }.bridal-campaign { min-height: 470px; }.bridal-campaign::before { inset: 1rem; }.campaign-content { padding: 2.2rem 1.7rem; }.campaign-content h1 { font-size: 3.5rem; }.campaign-seal { right: 2rem; top: 3.2rem; transform: scale(.78) rotate(-12deg); }.account-panel { padding: 2.5rem 1.3rem; }.packaging-strip { grid-template-columns: 1fr; }.account-footer { flex-direction: column; } }
