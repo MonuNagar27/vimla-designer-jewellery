@@ -3,372 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Vimla Designer Jewellery — luxury Indian jewellery boutique featuring bridal sets, gold jewellery, kundan, polki, diamond and temple jewellery."
-    />
-    <title>Vimla Designer Jewellery</title>
+    <meta name="description" content="Vimla Designer Jewellery — handcrafted Indian jewellery from Kota, Rajasthan." />
+    <title>Vimla Designer Jewellery | Kota, Rajasthan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="topbar">
-      <div class="container topbar-inner">
-        <p>Complimentary shipping on orders above ₹10,000</p>
-        <p>Book a private styling consultation</p>
-      </div>
-    </div>
+    <div class="topbar"><div class="container topbar-inner"><span>Handcrafted Indian jewellery from Kota, Rajasthan</span><a href="https://wa.me/917877177996" target="_blank" rel="noreferrer">WhatsApp orders: 7877177996</a></div></div>
 
     <header class="site-header">
       <div class="container nav-wrap">
-        <div class="brand-block">
-          <div class="brand-mark">V</div>
-          <div>
-            <p class="brand-kicker">Fine Jewellery House</p>
-            <h1>Vimla Designer Jewellery</h1>
-          </div>
-        </div>
-
+        <a class="brand" href="#home" aria-label="Vimla Designer Jewellery home"><img src="logo.svg" alt="Vimla Designer Jewellery logo" /></a>
+        <button class="mobile-menu" aria-label="Open menu" aria-expanded="false">☰</button>
         <nav class="main-nav" aria-label="Main navigation">
           <a href="#home">Home</a>
-          <a href="#collections">Collections</a>
-          <a href="#featured">Featured</a>
-          <a href="#craft">Craft</a>
-          <a href="#about">About</a>
+          <div class="nav-dropdown">
+            <button class="dropdown-trigger" aria-expanded="false">Collections <span>⌄</span></button>
+            <div class="dropdown-menu">
+              <a href="#featured" data-filter-link="all">All Jewellery</a>
+              <a href="#featured" data-filter-link="bridal">Bridal Collection</a>
+              <a href="#featured" data-filter-link="brass-copper">Brass &amp; Copper</a>
+              <a href="#featured" data-filter-link="temple">Temple Jewellery</a>
+              <a href="#featured" data-filter-link="gold-plated">Gold-Plated Edit</a>
+              <a href="#featured" data-filter-link="rajasthani">Rajasthani Heritage</a>
+              <a href="#featured" data-filter-link="daily-wear">Daily Wear</a>
+            </div>
+          </div>
+          <a href="#featured">Shop Jewellery</a>
+          <a href="#craft">Our Craft</a>
+          <a href="#about">About Us</a>
           <a href="#contact">Contact</a>
         </nav>
-
-        <div class="nav-actions">
-          <button class="icon-btn" aria-label="Search">⌕</button>
-          <button class="icon-btn cart-toggle" aria-label="Shopping cart">
-            🛍️ <span id="cart-count">0</span>
-          </button>
-        </div>
+        <div class="nav-actions"><button class="icon-btn search-toggle" aria-label="Search jewellery">⌕</button><button class="icon-btn cart-toggle" aria-label="Shopping cart">🛍️ <span id="cart-count">0</span></button></div>
       </div>
+      <div class="search-panel" id="searchPanel"><div class="container"><input id="searchInput" type="search" placeholder="Search necklaces, bangles, temple jewellery..." aria-label="Search jewellery" /></div></div>
     </header>
 
     <main id="home">
-      <section class="hero">
-        <div class="container hero-inner">
-          <div class="hero-copy">
-            <p class="eyebrow">Heirloom pieces for modern celebrations</p>
-            <h2>Luxury crafted for your forever moments.</h2>
-            <p>
-              Discover statement bridal jewellery, elegant gold sets, and artisan-crafted heirlooms inspired by India’s timeless craftsmanship.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#featured">Shop collection</a>
-              <a class="btn btn-secondary" href="#about">Our story</a>
-            </div>
-            <ul class="feature-list">
-              <li>Certified craftsmanship</li>
-              <li>Bridal styling support</li>
-              <li>Worldwide shipping</li>
-            </ul>
-          </div>
+      <section class="hero"><div class="container hero-inner"><div class="hero-copy"><p class="eyebrow">The Rajasthani jewellery edit</p><h1>Tradition, styled<br /><em>for today.</em></h1><p>Discover beautiful Indian jewellery inspired by heritage, celebration and everyday elegance — thoughtfully curated by Vimla Designer Jewellery.</p><div class="cta-row"><a class="btn btn-primary" href="#featured">Explore collections <span>↗</span></a><a class="btn btn-secondary" href="#about">Discover our story</a></div><div class="trust-row"><span>✦ Ready stock</span><span>✦ WhatsApp ordering</span><span>✦ Kota, Rajasthan</span></div></div><div class="hero-visual"><div class="hero-card"><span class="badge">New collection</span><img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1000&q=85" alt="Indian bridal jewellery collection" /></div><div class="floating-note note-one"><strong>Made to celebrate</strong><span>Rajasthani-inspired designs</span></div><div class="floating-note note-two"><strong>Curated with care</strong><span>Elegant pieces for every occasion</span></div></div></div></section>
 
-          <div class="hero-visual" aria-label="Luxury Indian jewellery showcase">
-            <div class="hero-card main-card">
-              <span class="badge">New Bridal Edit</span>
-              <img
-                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80"
-                alt="Luxury bridal jewellery set"
-              />
-            </div>
-            <div class="floating-note note-one">
-              <strong>Hand-set diamonds</strong>
-              <span>18K gold finish</span>
-            </div>
-            <div class="floating-note note-two">
-              <strong>Crafted in India</strong>
-              <span>Traditional artistry</span>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section class="collection-strip" id="collections"><div class="container strip-grid"><a href="#featured" data-filter-link="bridal"><small>01</small><strong>Bridal Collection</strong><span>For your special day</span></a><a href="#featured" data-filter-link="rajasthani"><small>02</small><strong>Rajasthani Heritage</strong><span>Royal details</span></a><a href="#featured" data-filter-link="temple"><small>03</small><strong>Temple Jewellery</strong><span>Timeless devotion</span></a><a href="#featured" data-filter-link="daily-wear"><small>04</small><strong>Daily Wear</strong><span>Everyday elegance</span></a></div></section>
 
-      <section class="collection-strip" id="collections">
-        <div class="container strip-grid">
-          <article>
-            <p>01</p>
-            <h3>Bridal Jewellery</h3>
-          </article>
-          <article>
-            <p>02</p>
-            <h3>Gold Crescents</h3>
-          </article>
-          <article>
-            <p>03</p>
-            <h3>Temple Staples</h3>
-          </article>
-          <article>
-            <p>04</p>
-            <h3>Diamond Statements</h3>
-          </article>
-        </div>
-      </section>
+      <section class="categories section-spacing"><div class="container"><div class="section-heading"><p class="eyebrow">Shop by collection</p><h2>Find a piece<br /><em>that feels like you.</em></h2></div><div class="category-grid"><a class="category-card category-tall" href="#featured" data-filter-link="bridal"><img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85" alt="Bridal and kundan jewellery" /><div><span>01 / Celebration</span><h3>Bridal &amp; Kundan</h3><b>Explore collection →</b></div></a><a class="category-card" href="#featured" data-filter-link="rajasthani"><img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=85" alt="Rajasthani heritage jewellery" /><div><span>02 / Heritage</span><h3>Rajasthani Heritage</h3><b>Explore collection →</b></div></a><a class="category-card" href="#featured" data-filter-link="gold-plated"><img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85" alt="Gold-plated jewellery" /><div><span>03 / Everyday</span><h3>Gold-Plated Edit</h3><b>Explore collection →</b></div></a><a class="category-card" href="#featured" data-filter-link="temple"><img src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=85" alt="Temple jewellery" /><div><span>04 / Devotion</span><h3>Temple Jewellery</h3><b>Explore collection →</b></div></a></div></div></section>
 
-      <section class="categories section-spacing">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Curated categories</p>
-            <h2>Jewellery for every moment</h2>
-          </div>
+      <section class="featured section-spacing" id="featured"><div class="container"><div class="section-heading split-heading"><div><p class="eyebrow">The catalogue</p><h2>Pieces to treasure.</h2></div><p class="section-intro">Browse our curated selection of necklaces, chokers, earrings, bangles, rings and more.</p></div><div class="filter-row" aria-label="Jewellery categories"><button class="filter-btn active" data-filter="all">All Jewellery</button><button class="filter-btn" data-filter="bridal">Bridal</button><button class="filter-btn" data-filter="brass-copper">Brass &amp; Copper</button><button class="filter-btn" data-filter="temple">Temple</button><button class="filter-btn" data-filter="gold-plated">Gold-Plated</button><button class="filter-btn" data-filter="rajasthani">Rajasthani</button><button class="filter-btn" data-filter="daily-wear">Daily Wear</button></div><div class="products-grid" id="product-grid"></div></div></section>
 
-          <div class="category-grid">
-            <article class="category-card">
-              <img
-                src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80"
-                alt="Gold necklace"
-              />
-              <div>
-                <h3>Gold Jewellery</h3>
-                <span>Signature heirlooms</span>
-              </div>
-            </article>
-            <article class="category-card">
-              <img
-                src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80"
-                alt="Kundan jewellery"
-              />
-              <div>
-                <h3>Kundan & Polki</h3>
-                <span>Royal shimmer</span>
-              </div>
-            </article>
-            <article class="category-card">
-              <img
-                src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80"
-                alt="Diamond jewellery"
-              />
-              <div>
-                <h3>Diamond Edit</h3>
-                <span>Modern luxury</span>
-              </div>
-            </article>
-            <article class="category-card">
-              <img
-                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80"
-                alt="Temple jewellery"
-              />
-              <div>
-                <h3>Temple Heritage</h3>
-                <span>Classic elegance</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
+      <section class="story section-spacing" id="craft"><div class="container story-grid"><div class="story-image"><img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1000&q=85" alt="Close-up of handcrafted jewellery" /></div><div class="story-copy"><p class="eyebrow">Our craft, your story</p><h2>Jewellery with a sense of place.</h2><p>Vimla Designer Jewellery brings the warmth of Rajasthan to pieces made for modern life. From antique brass and copper finishes to temple-inspired details and lightweight gold-plated designs, every selection is chosen to help you celebrate beautifully.</p><div class="story-metrics"><div><strong>01</strong><span>Rooted in Kota, Rajasthan</span></div><div><strong>06</strong><span>Curated collections</span></div><div><strong>∞</strong><span>Moments to celebrate</span></div></div></div></div></section>
 
-      <section class="featured section-spacing" id="featured">
-        <div class="container">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow">Featured pieces</p>
-              <h2>Best sellers in luxury Indian jewellery</h2>
-            </div>
-            <a href="#contact" class="inline-link">Book a private consultation</a>
-          </div>
+      <section class="testimonial section-spacing"><div class="container"><div class="section-heading center"><p class="eyebrow">A little love</p><h2>Made for meaningful moments.</h2></div><div class="testimonial-grid"><blockquote>“Beautiful traditional designs with a lovely modern finish.”<footer>— Vimla customer</footer></blockquote><blockquote>“The WhatsApp ordering experience was simple and personal.”<footer>— Vimla customer</footer></blockquote><blockquote>“The perfect pieces for a family celebration.”<footer>— Vimla customer</footer></blockquote></div></div></section>
 
-          <div class="filter-row" aria-label="Product filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="bridal">Bridal</button>
-            <button class="filter-btn" data-filter="gold">Gold</button>
-            <button class="filter-btn" data-filter="diamond">Diamond</button>
-            <button class="filter-btn" data-filter="temple">Temple</button>
-          </div>
+      <section class="about section-spacing" id="about"><div class="container about-box"><div><p class="eyebrow">Vimla Designer Jewellery</p><h2>Wear your heritage<br /><em>with confidence.</em></h2></div><p>Whether you are choosing a bridal statement, a temple-inspired heirloom or a daily-wear favourite, our collection is designed to make Indian craftsmanship feel personal, joyful and beautifully yours.</p><a class="btn btn-primary" href="https://wa.me/917877177996" target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a></div></section>
 
-          <div class="products-grid" id="product-grid"></div>
-        </div>
-      </section>
-
-      <section class="story section-spacing" id="craft">
-        <div class="container story-grid">
-          <div class="story-image">
-            <img
-              src="https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=900&q=80"
-              alt="Jewellery craftsmanship"
-            />
-          </div>
-          <div class="story-copy">
-            <p class="eyebrow">Artistry & craftsmanship</p>
-            <h2>Designed to become legacy.</h2>
-            <p>
-              Every Vimla piece is handcrafted by master artisans blending heritage techniques such as kundan, meenakari, and detailed hand engraving with modern silhouettes that feel personal and contemporary.
-            </p>
-            <div class="story-metrics">
-              <div>
-                <strong>25+</strong>
-                <span>Years of design expertise</span>
-              </div>
-              <div>
-                <strong>5,000+</strong>
-                <span>Jewellery masterpieces</span>
-              </div>
-              <div>
-                <strong>100%</strong>
-                <span>Crafted with care</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonial section-spacing">
-        <div class="container">
-          <div class="section-heading center">
-            <p class="eyebrow">Client love</p>
-            <h2>Celebrations remembered in gold</h2>
-          </div>
-
-          <div class="testimonial-grid">
-            <blockquote>
-              “The bridal set I ordered felt like it was made just for my wedding day. The detailing and finish are stunning.”
-              <footer>— Aisha S., Mumbai</footer>
-            </blockquote>
-            <blockquote>
-              “From styling suggestions to packaging, every touchpoint felt luxurious. My mother loved the temple necklace.”
-              <footer>— Neha R., Bengaluru</footer>
-            </blockquote>
-            <blockquote>
-              “Beautiful artisan work and exceptional customer service. It was the perfect gift for my sister’s engagement.”
-              <footer>— Meera K., Delhi</footer>
-            </blockquote>
-          </div>
-        </div>
-      </section>
-
-      <section class="journals section-spacing" id="about">
-        <div class="container">
-          <div class="section-heading split-heading">
-            <div>
-              <p class="eyebrow">Our atelier</p>
-              <h2>Jewellery inspired by heritage and emotion</h2>
-            </div>
-            <a href="#contact" class="inline-link">Visit the studio</a>
-          </div>
-
-          <div class="journal-grid">
-            <article>
-              <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=800&q=80" alt="Jewellery box luxury" />
-              <div>
-                <span>Styling guide</span>
-                <h3>How to layer statement jewellery for weddings</h3>
-              </div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=80" alt="Indian bridal jewellery" />
-              <div>
-                <span>Craft story</span>
-                <h3>The heritage behind kundan and meenakari work</h3>
-              </div>
-            </article>
-            <article>
-              <img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=800&q=80" alt="Luxury jewellery close-up" />
-              <div>
-                <span>Occasion edit</span>
-                <h3>Elegant gifting ideas for anniversaries and milestones</h3>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="newsletter section-spacing">
-        <div class="container newsletter-box">
-          <div>
-            <p class="eyebrow">Be first to see new arrivals</p>
-            <h2>Join our private jewellery list</h2>
-          </div>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Your email address" aria-label="Email" />
-            <button type="submit" class="btn btn-primary">Subscribe</button>
-          </form>
-        </div>
-      </section>
+      <section class="newsletter section-spacing"><div class="container newsletter-box"><div><p class="eyebrow">Stay in the loop</p><h2>New pieces, directly to you.</h2></div><form class="newsletter-form"><input type="email" placeholder="Your email address" aria-label="Email address" required /><button type="submit" class="btn btn-primary">Subscribe</button></form></div></section>
     </main>
 
-    <aside class="cart-drawer" aria-label="Shopping cart" id="cartDrawer">
-      <div class="cart-header">
-        <h3>Your cart</h3>
-        <button class="close-cart" aria-label="Close cart">×</button>
-      </div>
-      <div class="cart-items" id="cartItems"></div>
-      <div class="cart-summary">
-        <div>
-          <span>Subtotal</span>
-          <strong id="cartTotal">₹0</strong>
-        </div>
-        <button class="btn btn-primary checkout-btn" type="button">Proceed to checkout</button>
-      </div>
-    </aside>
+    <aside class="cart-drawer" aria-label="Shopping cart" id="cartDrawer"><div class="cart-header"><h3>Your bag</h3><button class="close-cart" aria-label="Close cart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-summary"><div><span>Subtotal</span><strong id="cartTotal">₹0</strong></div><button class="btn btn-primary checkout-btn" type="button">Order via WhatsApp</button></div></aside>
+    <div class="checkout-modal" id="checkoutModal" aria-hidden="true"><div class="modal-content"><div class="modal-header"><h3>Order details</h3><button class="close-modal" aria-label="Close order form">×</button></div><form class="checkout-form" id="checkoutForm"><div class="form-grid"><input type="text" placeholder="Full name" required /><input type="tel" placeholder="Phone number" required /><input type="text" placeholder="Shipping address" required /><input type="text" placeholder="Preferred payment method" required /></div><p class="form-note">After submitting, we will confirm your jewellery order with you on WhatsApp.</p><button type="submit" class="btn btn-primary full-width">Send order request</button></form></div></div>
 
-    <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3>Checkout</h3>
-          <button class="close-modal" aria-label="Close checkout">×</button>
-        </div>
-
-        <form class="checkout-form" id="checkoutForm">
-          <div class="form-grid">
-            <input type="text" placeholder="Full name" required />
-            <input type="email" placeholder="Email address" required />
-            <input type="tel" placeholder="Phone number" required />
-            <input type="text" placeholder="Shipping address" required />
-          </div>
-          <label class="payment-box">
-            <input type="checkbox" checked />
-            Secure payment handling for luxury jewellery orders
-          </label>
-          <button type="submit" class="btn btn-primary full-width">Place order</button>
-        </form>
-      </div>
-    </div>
-
-    <footer class="site-footer" id="contact">
-      <div class="container footer-grid">
-        <div>
-          <div class="brand-block footer-brand">
-            <div class="brand-mark">V</div>
-            <div>
-              <p class="brand-kicker">Fine Jewellery House</p>
-              <h1>Vimla Designer Jewellery</h1>
-            </div>
-          </div>
-          <p class="footer-copy">
-            Luxury handcrafted jewellery inspired by India’s heritage, designed for modern celebrations and treasured heirlooms.
-          </p>
-        </div>
-
-        <div>
-          <h4>Visit our studio</h4>
-          <ul>
-            <li>12 Rosewood Avenue</li>
-            <li>Juhu, Mumbai 400049</li>
-            <li>+91 98765 43210</li>
-          </ul>
-        </div>
-
-        <div>
-          <h4>Connect</h4>
-          <ul>
-            <li>Instagram: @vimlajewels</li>
-            <li>Email: hello@vimlajewellery.com</li>
-            <li>WhatsApp: +91 98765 43210</li>
-          </ul>
-        </div>
-      </div>
-      <div class="container footer-bottom">
-        <p>© 2026 Vimla Designer Jewellery. All rights reserved.</p>
-      </div>
-    </footer>
-
+    <footer class="site-footer" id="contact"><div class="container footer-grid"><div><a class="brand footer-brand" href="#home"><img src="logo.svg" alt="Vimla Designer Jewellery logo" /></a><p class="footer-copy">Indian jewellery inspired by heritage, curated in Kota, Rajasthan.</p></div><div><h4>Visit us</h4><ul><li>2-K-1 Teachers Colony</li><li>Main Road, Kota, Rajasthan</li><li>PIN: 324009</li></ul></div><div><h4>Connect</h4><ul><li><a href="tel:+917877177996">+91 78771 77996</a></li><li><a href="https://wa.me/917877177996">WhatsApp orders</a></li><li>Instagram · YouTube · Facebook</li></ul></div></div><div class="container footer-bottom"><p>© 2026 Vimla Designer Jewellery. All rights reserved.</p><p>Handcrafted Indian jewellery</p></div></footer>
     <script src="script.js"></script>
   </body>
 </html>
