@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Your jewellery bag at Vimla Designer Jewellery." />
+  <title>Your Bag | Vimla Designer Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="palace-border" aria-hidden="true"></div>
+  <header class="cart-header">
+    <a href="index.html" class="cart-logo"><img src="logo.svg" alt="Vimla Designer Jewellery" /></a>
+    <a href="index.html#featured" class="continue-link">Continue shopping <span>↗</span></a>
+  </header>
+
+  <main class="cart-shell">
+    <div class="cart-title-row">
+      <div><p class="eyebrow">Your private selection</p><h1>Your jewellery bag</h1><p class="intro">Review your chosen pieces before placing your order with Vimla Designer Jewellery.</p></div>
+      <div class="cart-count-label"><strong id="itemCount">0</strong><span>items selected</span></div>
+    </div>
+
+    <div class="cart-layout">
+      <section class="cart-list-panel">
+        <div id="cartList" class="cart-list"></div>
+        <div id="emptyCart" class="empty-cart" hidden><span>♢</span><h2>Your bag is waiting.</h2><p>Discover Rajasthani, temple, bridal and everyday jewellery for your next celebration.</p><a class="gold-button" href="index.html#featured">Explore the collection ↗</a></div>
+      </section>
+
+      <aside class="summary-card">
+        <div class="summary-ornament">✦ ❧ ✦</div>
+        <p class="eyebrow">Order summary</p>
+        <h2>Ready to make it yours?</h2>
+        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">₹0</strong></div>
+        <div class="summary-line"><span>Shipping</span><span id="shipping">Calculated at checkout</span></div>
+        <div class="summary-total"><span>Total</span><strong id="total">₹0</strong></div>
+        <button id="checkoutButton" class="gold-button full-width" type="button">Proceed to checkout <span>→</span></button>
+        <a id="whatsappButton" class="whatsapp-button full-width" href="#" target="_blank" rel="noreferrer">Order via WhatsApp</a>
+        <p class="secure-note">♢ Secure order assistance from our Kota, Rajasthan studio.</p>
+      </aside>
+    </div>
+  </main>
+
+  <div class="checkout-modal" id="checkoutModal" aria-hidden="true">
+    <div class="checkout-dialog">
+      <button class="close-modal" id="closeModal" type="button" aria-label="Close checkout">×</button>
+      <p class="eyebrow">A personal service</p>
+      <h2>Complete your order</h2>
+      <p class="modal-copy">Share your details and our team will contact you on WhatsApp to confirm availability, delivery and payment.</p>
+      <form id="checkoutForm" class="checkout-form">
+        <input name="name" type="text" placeholder="Full name" required />
+        <input name="phone" type="tel" placeholder="Phone number" required />
+        <input name="address" type="text" placeholder="Delivery address" required />
+        <select name="payment" required><option value="">Preferred payment method</option><option>UPI</option><option>Bank transfer</option><option>Cash on delivery</option></select>
+        <button class="gold-button full-width" type="submit">Place order request</button>
+        <p id="checkoutMessage" class="checkout-message" role="status"></p>
+      </form>
+    </div>
+  </div>
+  <footer class="cart-footer"><span>© 2026 Vimla Designer Jewellery</span><span>Handcrafted Indian jewellery · Kota, Rajasthan</span></footer>
+  <script src="cart-page.js"></script>
+</body>
+</html>
