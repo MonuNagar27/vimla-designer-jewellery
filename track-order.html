@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Track your Vimla Designer Jewellery order." />
+  <title>Track Order | Vimla Designer Jewellery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="track-order.css" />
+</head>
+<body>
+  <div class="palace-border" aria-hidden="true"></div>
+  <header class="page-header"><a href="index.html"><img src="logo.svg" alt="Vimla Designer Jewellery" /></a><a class="back-link" href="dashboard.html">My account ↗</a></header>
+  <main class="track-shell">
+    <section class="track-intro"><p class="eyebrow">A personal service</p><h1>Track your<br /><em>jewellery journey.</em></h1><p>Enter your Vimla order number to see the latest status. Signed-in customers can also open tracking from the My Orders section.</p></section>
+    <section class="track-card">
+      <form id="trackingForm" class="tracking-form"><label for="orderNumber">Order number</label><div class="search-row"><input id="orderNumber" type="text" placeholder="Example: VIM-123456" required /><button class="gold-button" type="submit">Track order</button></div><p class="hint">Demo orders are saved in this browser after checkout.</p></form>
+      <div id="trackingResult" class="tracking-result" aria-live="polite"></div>
+    </section>
+    <section class="track-help"><strong>Need help?</strong><span>WhatsApp our Kota studio for personal order assistance.</span><a href="https://wa.me/917877177996" target="_blank" rel="noreferrer">Chat on WhatsApp ↗</a></section>
+  </main>
+  <footer class="page-footer">© 2026 Vimla Designer Jewellery · Handcrafted Indian jewellery · Kota, Rajasthan</footer>
+  <script src="track-order.js"></script>
+</body>
+</html>
